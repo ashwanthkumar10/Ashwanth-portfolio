@@ -18,7 +18,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <ScrollTransition id="home">
+   
       <section className="relative h-screen bg-gray-900 text-white flex flex-col justify-start items-center overflow-hidden">
         {/* Main Content */}
         <div className="relative z-10 flex flex-col justify-start items-center text-center mt-16 space-y-4">
@@ -109,7 +109,7 @@ const Hero = () => {
           </div>
         </div>
       </section>
-    </ScrollTransition>
+    
   );
 };
 
