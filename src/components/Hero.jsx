@@ -70,7 +70,8 @@ const Hero = () => {
 
           {/* Action Button */}
           <a
-            href="#"
+            href="https://drive.google.com/file/d/1o1at3RDnUKpYUVJ24BAzMfmsKbAay0hw/view?usp=drive_link"
+            target="_blank"
             className="inline-block mt-6 bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 px-6 rounded-lg shadow-lg transition duration-300"
           >
             View CV
