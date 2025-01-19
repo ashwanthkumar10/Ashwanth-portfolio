@@ -2,7 +2,6 @@ import React from "react";
 import ScrollTransition from "./ScrollTransition";
 
 const Project = () => {
-  // Example project data
   const projects = [
     {
       title: "Chatty",
@@ -17,36 +16,36 @@ const Project = () => {
         "Tailwind CSS",
         "Socket.io",
       ],
-      image: "/images/chatty.png", // Replace with actual image path
-      link: "https://github.com/ashwanthkumar10/Real-Time-Chat-App", // Replace with actual GitHub link
+      image: "/images/chatty.png",
+      gitLink: "https://github.com/ashwanthkumar10/Real-Time-Chat-App",
+      projectLink: "/chatty", // Replace with the actual project page route
     },
     {
       title: "Product Store Application",
       description:
         "Product Store is a web application developed with React and a backend API to efficiently store, manage, and display products, showcasing my skills in building scalable solutions for product inventory management with a focus on user-friendly design and data handling.",
-      tags: ["MongoDB",
-        "Express Js",
-        "React Js",
-        "Node Js",
-        "Tailwind CSS",],
-      image: "/images/Product store.png", // Replace with actual image path
-      link: "https://github.com/ashwanthkumar10/Product-Store-App", // Replace with actual GitHub link
+      tags: ["MongoDB", "Express Js", "React Js", "Node Js", "Tailwind CSS"],
+      image: "/images/Product store.png",
+      gitLink: "https://github.com/ashwanthkumar10/Product-Store-App",
+      projectLink: "/product-store", // Replace with the actual project page route
     },
     {
       title: "Movies WatchList Application",
       description:
         "This Movie Watchlist application allows users to easily add, edit, and delete movies from their personalized watchlist, offering a seamless experience for managing movie preferences with a simple and intuitive interface.",
       tags: ["React.js", "RESTful API", "Tailwind CSS"],
-      image: "/images/imdb.png", // Replace with actual image path
-      link: "https://github.com/ashwanthkumar10/movies-watchlist-app", // Replace with actual GitHub link
+      image: "/images/imdb.png",
+      gitLink: "https://github.com/ashwanthkumar10/movies-watchlist-app",
+      projectLink: "/movies-watchlist", // Replace with the actual project page route
     },
     {
       title: "To-Do List Application",
       description:
-        "To-Do List application, built with React, allows users to easily add, view, and delete tasks. The app features a simple and intuitive interface, where users can manage their tasks dynamically using React's state management. It demonstrates my ability to work with React components, handle user input, and update the UI based on state changes, providing a smooth experience for task organization.",
+        "To-Do List application, built with React, allows users to easily add, view, and delete tasks. The app features a simple and intuitive interface, where users can manage their tasks dynamically using React's state management.",
       tags: ["React.js", "Tailwind CSS"],
-      image: "/images/Todo.png", // Replace with actual image path
-      link: "https://github.com/ashwanthkumar10/ToDoListReact", // Replace with actual GitHub link
+      image: "/images/Todo.png",
+      gitLink: "https://github.com/ashwanthkumar10/ToDoListReact",
+      projectLink: "https://to-do-list-react-wfob.vercel.app/", // Replace with the actual project page route
     },
   ];
 
@@ -84,12 +83,18 @@ const Project = () => {
                     ))}
                   </div>
                   <a
-                    href={project.link}
+                    href={project.gitLink}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block mt-4 text-blue-400 hover:underline"
                   >
                     View on GitHub
+                  </a>
+                  <a
+                    href={project.projectLink}
+                    className="block mt-2 text-green-400 hover:underline"
+                  >
+                    View Project Page
                   </a>
                 </div>
               </div>
